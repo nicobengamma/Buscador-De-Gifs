@@ -11,11 +11,10 @@ function buscar1() {
   fetch(apiK)
   .then(response => response.json())
   .then(data => {
-    let image = data.data[0].images.original.url
-    console.log(image)
-
-  } 
-    )
-
+    let image = data.data[0].images.original.url ;
+    let robo0 = document.getElementById("result0").src=image ;
+  console.log (robo0)
+  console.log (image)
+  })
   
 }
